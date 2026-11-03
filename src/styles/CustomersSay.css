@@ -3,11 +3,6 @@
     background-color: var(--highlight-color-white);
 }
 
-.testimonials__container {
-    max-width: 960px;
-    margin-inline: auto;
-}
-
 .testimonials__container h2 {
     font-family: var(--font-primary);
     font-size: var(--fs-lg);
@@ -72,6 +67,12 @@
 }
 
 /* RESPONSIVE */
+
+@media (max-width: 980px) {
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 768px) {
     .testimonials__grid {
