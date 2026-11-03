@@ -1,8 +1,8 @@
 import "../../styles/ui/Button.css";
 
-export function Button({ children, onClick }) {
+export function Button({ children, onClick, type="button", disabled=false }) {
   return (
-    <button onClick={onClick} className="ui__button">
+    <button type={type} onClick={onClick} disabled={disabled} className="ui__button">
       {children}
     </button>
   );

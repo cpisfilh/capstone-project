@@ -20,7 +20,7 @@ export function Hero() {
         </div>
 
         <div className="hero__image">
-          <img src={HeroImage} alt="Little Lemon" />
+          <img src={HeroImage} alt="Dish of Little Lemon" />
         </div>
       </div>
     </section>

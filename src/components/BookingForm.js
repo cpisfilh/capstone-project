@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Button } from "./ui/Button";
+import "../styles/BookingForm.css";
 
 export function BookingForm({availableTimes, dispatch, onSubmit }) {
   const today = new Date().toLocaleDateString("en-CA");
@@ -39,12 +41,18 @@ export function BookingForm({availableTimes, dispatch, onSubmit }) {
     occasion !== "";
 
   return (
-    <form onSubmit={handleSubmit} style={{display: "grid", maxWidth: "200px", gap: "20px"}}>
+    <form onSubmit={handleSubmit} className="booking-form" aria-labelledby="booking-title">
 
-      <h2>BookingForm</h2>
+      <h2 id="booking-title">Make a reservation</h2>
+      <p className="booking-description">
+        Complete the details below to book your table.
+      </p>
 
       <label htmlFor="res-date">Choose date</label>
       <input type="date" id="res-date" value={date} min={today} onChange={handleDateChange} required />
+      <span className="error-message">
+        Please select a valid date.
+      </span>
 
       <label htmlFor="res-time">Choose time</label>
       <select id="res-time" value={time} onChange={(e)=>setTime(e.target.value)} required>
@@ -52,17 +60,28 @@ export function BookingForm({availableTimes, dispatch, onSubmit }) {
           <option key={index} value={hour}>{hour}</option>
         ))}
       </select>
+      <span className="error-message">
+        Please select a valid time.
+      </span>
 
       <label htmlFor="guests">Number of guests</label>
-      <input type="number" inputMode="numeric" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={(e)=>setGuests(e.target.value)} required />
+      <input type="number" inputMode="numeric" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={(e) => setGuests(e.target.value)} required />
+      <span className="error-message">
+        Enter between 1 and 10 guests.
+      </span>
 
       <label htmlFor="occasion">Occasion</label>
       <select id="occasion" value={occasion} onChange={(e)=>setOccasion(e.target.value)} required>
         <option value="Birthday">Birthday</option>
         <option value="Anniversary">Anniversary</option>
       </select>
+      <span className="error-message">
+        Please select a valid occasion.
+      </span>
 
-      <button type="submit" disabled={!isFormValid}>Make Your reservation</button>
+      <Button type="submit" disabled={!isFormValid} aria-label="Make Your reservation">
+        Make Your reservation
+      </Button>
 
     </form>
   );

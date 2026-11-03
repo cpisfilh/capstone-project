@@ -8,10 +8,22 @@ export function MobileMenu() {
 
   return (
     <section className="mobile-menu">
-      <button className="mobile-menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+      <button
+        type="button"
+        className="mobile-menu-toggle"
+        aria-label="On Click"
+        aria-expanded={isOpen}
+        aria-controls="mobile-navigation"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <img src={BurgerMenuImage} alt="Burger Menu" />
       </button>
-      <nav className={`mobile-menu-content ${isOpen ? "show" : ""}`}>
+      <nav
+        id="mobile-navigation"
+        aria-label="Mobile navigation"
+        className={`mobile-menu-content ${isOpen ? "show" : ""}`}
+        hidden={!isOpen}
+      >
         <ul>
           <li>
             <Link to="/">Home</Link>

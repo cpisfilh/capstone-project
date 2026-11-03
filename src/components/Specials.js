@@ -3,6 +3,7 @@ import GreekSaladImage from "../assets/greek_salad.jpg";
 import BruchettaImage from "../assets/bruchetta.svg";
 import LemonDessertImage from "../assets/lemon_dessert.jpg";
 import { Button } from "./ui/Button";
+import { Link } from "react-router-dom";
 
 const dishes = [
   {
@@ -36,13 +37,13 @@ export function Specials() {
     <section className="specials">
       <div className="container specials__container">
         {/* Header */}
-        <div className="specials__header">
+        <header className="specials__header">
           <h2>Specials</h2>
 
           <Button onClick={() => console.log("Button clicked")} >
             Online Menu
           </Button>
-        </div>
+        </header>
 
         {/* Cards */}
         <div className="specials__grid">
@@ -62,10 +63,10 @@ export function Specials() {
 
                 <p>{dish.description}</p>
 
-                <a href="#" className="special-card__link">
+                <Link to="/order-online" className="special-card__link">
                   Order a delivery
                   <span aria-hidden="true">♟</span>
-                </a>
+                </Link>
               </div>
             </article>
           ))}

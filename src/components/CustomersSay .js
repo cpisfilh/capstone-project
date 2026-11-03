@@ -40,7 +40,7 @@ export function CustomersSay() {
     <section className="testimonials" aria-labelledby="testimonials-title">
       <div className="container testimonials__container">
 
-        <h2>
+        <h2 id="testimonials-title">
           Testimonials
         </h2>
 
@@ -50,7 +50,7 @@ export function CustomersSay() {
             <article className="testimonial-card" key={testimonial.id}>
 
               <p className="testimonial-card__rating">
-                <span>Rating</span>
+                Rating: {testimonial.rating} out of 5
               </p>
 
               <header className="testimonial-card__header">
