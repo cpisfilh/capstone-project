@@ -10,8 +10,7 @@ export function Hero() {
           <h2>Chicago</h2>
 
           <p>
-            Chicago dfd dfd fdfdf gggsgdd sfs dsfg sdgdsg sdgsg s sdg sdgs ds
-            dsgsdgs sdgds sgsdg dfdf
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
           <a href="#" className="hero__button">

@@ -4,7 +4,6 @@
 }
 
 .hero__container {
-  max-width: 960px;
   min-height: 400px;
   margin-inline: auto;
   display: flex;
@@ -55,7 +54,6 @@
 }
 
 .hero__image {
-  flex: 1;
   display: flex;
   justify-content: center;
 }

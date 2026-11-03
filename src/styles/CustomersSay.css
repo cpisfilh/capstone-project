@@ -1,0 +1,94 @@
+.testimonials {
+    padding: var(--spacing-3xl) var(--container-padding);
+    background-color: var(--highlight-color-white);
+}
+
+.testimonials__container {
+    max-width: 960px;
+    margin-inline: auto;
+}
+
+.testimonials__container h2 {
+    font-family: var(--font-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--highlight-color-black);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.testimonial-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-2);
+}
+
+.testimonial-card__rating {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    font-size: var(--fs-xs);
+    margin-bottom: var(--spacing-sm);
+}
+
+.testimonial-card__rating span:last-child {
+    color: var(--primary-color-yellow);
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+}
+
+.testimonial-card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.testimonial-card__image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: var(--radius-2);
+}
+
+.testimonial-card__name {
+    font-family: var(--font-primary);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    color: var(--highlight-color-black);
+}
+
+.testimonial-card__review {
+    font-size: var(--fs-xs);
+    line-height: var(--lh-normal);
+    color: var(--highlight-color-black);
+    margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding-block: var(--spacing-2xl);
+    }
+
+    .testimonials__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials__title {
+        margin-bottom: var(--spacing-xl);
+    }
+}

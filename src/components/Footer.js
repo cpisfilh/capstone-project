@@ -3,13 +3,13 @@ import "../styles/Footer.css";
 
 export function Footer() {
   return (
-    <footer className='container footer-content'>
-        <a href="/">
-          <img src={logo} width="150" alt="Little Lemon Logo" />
-        </a>
+    <footer className="container footer-content">
+      <a href="/">
+        <img src={logo} width="150" alt="Little Lemon Logo" />
+      </a>
 
       <nav>
-        <h3>Doormat Navigation</h3>
+        <h4>Doormat Navigation</h4>
         <ul>
           <li>
             <a href="/">Home</a>
@@ -32,25 +32,21 @@ export function Footer() {
         </ul>
       </nav>
 
-      <div>
-        <h3>Contact</h3>
-
-        <address>
-          <ul>
-            <li>Dirección del establecimiento</li>
-            <li>
-              <a href="tel:+51000000000">Número de teléfono</a>
-            </li>
-            <li>
-              <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
-            </li>
-          </ul>
-
-        </address>
-      </div>
+      <nav>
+        <h4>Contact</h4>
+        <ul>
+          <li>Dirección del establecimiento</li>
+          <li>
+            <a href="tel:+51000000000">Número de teléfono</a>
+          </li>
+          <li>
+            <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+          </li>
+        </ul>
+      </nav>
 
       <nav>
-        <h3>Social Media Links</h3>
+        <h4>Social Media Links</h4>
 
         <ul>
           <li>
