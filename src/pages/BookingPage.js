@@ -25,7 +25,7 @@ export function BookingPage() {
 
   return (
     <main className="container">
-      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+      <BookingForm availableTimes={availableTimes} dispatch={dispatch} onSubmit={() => {}} />
     </main>
   );
 }
