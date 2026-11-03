@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { BookingsPage } from "./pages/BookingsPage";
+import { BookingPage } from "./pages/BookingPage";
 import { HomePage } from "./pages/HomePage";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/reservations" element={<BookingsPage />} />
+        <Route path="/reservations" element={<BookingPage />} />
       </Routes>
       <Footer />
     </>
