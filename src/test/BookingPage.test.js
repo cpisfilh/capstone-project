@@ -1,33 +1,33 @@
+import { fetchAPI } from "../api";
 import { initializeTimes, updateTimes } from "../pages/BookingPage";
+
+jest.mock("../api", () => ({
+  fetchAPI: jest.fn(),
+}));
 
 describe("BookingPage functions", () => {
 
-  test("initializeTimes returns the expected initial times", () => {
-    const result = initializeTimes();
+  test("initializeTimes returns the available booking times", () => {
+      const mockTimes = ["17:00", "18:00", "19:00"];
 
-    expect(result).toEqual([
-      "17:00",
-      "18:00",
-      "19:00",
-      "20:00",
-      "21:00",
-      "22:00",
-    ]);
-  });
+      fetchAPI.mockReturnValue(mockTimes);
 
-  test("updateTimes returns the same state", () => {
-    const state = [
-      "17:00",
-      "18:00",
-      "19:00",
-      "20:00",
-      "21:00",
-      "22:00",
-    ];
+      const result = initializeTimes();
 
-    const result = updateTimes(state, "2026-11-03");
+      expect(result).toEqual(mockTimes);
+      expect(fetchAPI).toHaveBeenCalledWith(expect.any(Date));
+    });
 
-    expect(result).toEqual(state);
-  });
+    test("updateTimes returns the available times for the selected date", () => {
+      const mockTimes = ["18:00", "20:00", "22:00"];
+      const selectedDate = "2026-11-10";
+
+      fetchAPI.mockReturnValue(mockTimes);
+
+      const result = updateTimes([], selectedDate);
+
+      expect(result).toEqual(mockTimes);
+      expect(fetchAPI).toHaveBeenCalledWith(new Date(selectedDate));
+    });
 
 });

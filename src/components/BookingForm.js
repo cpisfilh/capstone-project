@@ -15,9 +15,17 @@ export function BookingForm({availableTimes, dispatch, onSubmit }) {
     };
 
   const handleSubmit = (e) => {
-      e.preventDefault();
-      onSubmit();
+    e.preventDefault();
+
+    const formData = {
+      date,
+      time,
+      guests,
+      occasion,
     };
+
+    onSubmit(formData);
+  };
 
   return (
     <form onSubmit={handleSubmit} style={{display: "grid", maxWidth: "200px", gap: "20px"}}>
