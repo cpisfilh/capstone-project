@@ -1,31 +1,159 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  min-width: 320px;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--highlight-color-black);
+  background-color: #ffffff;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Tipografía */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  line-height: 1.1;
 }
 
+h1 {
+  font-size: var(--fs-xxl);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+p {
+  margin: 0;
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Variables */
+
 :root {
+
   --primary-color-green: #495E57;
   --primary-color-yellow: #F4CE14;
+
   --secondary-color-melon: #EE9972;
-  --secondary-color-rose : #FBDABB;
+  --secondary-color-rose: #FBDABB;
+
   --highlight-color-white: #EDEFEE;
   --highlight-color-black: #333333;
 
-  --radius: 16px; /* Border radius */
-  --fs-xl: 40;
-  --fs-m: 18;
-  --fs-sm: 16;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray: #D9D9D9;
+
+  --font-primary: 'Karla', sans-serif;
+  --font-secondary: 'Markazi Text', serif;
+
+  /* Font sizes */
+  --fs-xxl: 64px;
+  --fs-xl: 40px;
+  --fs-lg: 28px;
+  --fs-m: 18px;
+  --fs-sm: 16px;
+  --fs-xs: 14px;
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Line heights */
+  --lh-tight: 1.1;
+  --lh-normal: 1.5;
+
+  /* Border radius */
+  --radius-1: 16px;
+  --radius-2: 5px;
+  --radius-full: 999px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* Layout */
+  --container-width: 1200px;
+  --container-padding: 24px;
+}
+
+/* GLOBAL */
+
+.container {
+  width: min(100% - 48px, var(--container-width));
+  margin-inline: auto;
+}
+
+.text-green {
+  color: var(--primary-color-green);
+}
+
+.text-yellow {
+  color: var(--primary-color-yellow);
+}
+
+.bg-green {
+  background-color: var(--primary-color-green);
+}
+
+.bg-yellow {
+  background-color: var(--primary-color-yellow);
 }

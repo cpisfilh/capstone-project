@@ -1,0 +1,30 @@
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    list-style-type: none;
+    font-weight: 500;
+    padding: 0;
+}
+
+footer address ul{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    list-style-type: none;
+    font-weight: 500;
+    padding: 0;
+}
+
+.footer-content {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

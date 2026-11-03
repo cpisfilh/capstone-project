@@ -3,46 +3,7 @@
     margin-inline: auto;
 }
 
-.header-content {
-  min-height: 120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav ul{
-    display: flex;
-    gap:28px;
-    list-style-type: none;
-    font-weight: 500;
-}
-
 a {
     text-decoration: none;
     color: var(--primary-color);
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width: 600px) {
-  .header-content {
-    flex-direction: column;
-    height: auto;
-    gap: 20px;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
 }

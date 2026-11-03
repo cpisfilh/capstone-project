@@ -1,4 +1,5 @@
 import logo from "../assets/FooterLogo.png";
+import "../styles/Footer.css";
 
 export function Footer() {
   return (
@@ -35,13 +36,16 @@ export function Footer() {
         <h3>Contact</h3>
 
         <address>
-          <p>Dirección del establecimiento</p>
-          <p>
-            <a href="tel:+51000000000">Número de teléfono</a>
-          </p>
-          <p>
-            <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
-          </p>
+          <ul>
+            <li>Dirección del establecimiento</li>
+            <li>
+              <a href="tel:+51000000000">Número de teléfono</a>
+            </li>
+            <li>
+              <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+            </li>
+          </ul>
+
         </address>
       </div>
 
