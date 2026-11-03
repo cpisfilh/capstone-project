@@ -1,13 +1,11 @@
-import logo from "../assets/Logo.svg";
+import logo from "../assets/FooterLogo.png";
 
 export function Footer() {
   return (
-    <footer>
-      <div>
+    <footer className='container footer-content'>
         <a href="/">
-          <img src={logo} alt="Little Lemon Logo" />
+          <img src={logo} width="150" alt="Little Lemon Logo" />
         </a>
-      </div>
 
       <nav>
         <h3>Doormat Navigation</h3>

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --primary-color-green: #495E57;
+  --primary-color-yellow: #F4CE14;
+  --secondary-color-melon: #EE9972;
+  --secondary-color-rose : #FBDABB;
+  --highlight-color-white: #EDEFEE;
+  --highlight-color-black: #333333;
+
+  --radius: 16px; /* Border radius */
+  --fs-xl: 40;
+  --fs-m: 18;
+  --fs-sm: 16;
 }
