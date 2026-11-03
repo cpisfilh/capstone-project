@@ -2,3 +2,11 @@ a {
     text-decoration: none;
     color: var(--primary-color);
 }
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}

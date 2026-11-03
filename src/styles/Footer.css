@@ -1,10 +1,14 @@
 .footer-content {
   display: flex;
-  gap: var(--spacing-xl);
   padding: var(--spacing-xl) 0;
+  gap : 20px;
 }
 
-footer nav ul{
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer div nav ul{
     display: flex;
     flex-direction: column;
     gap:10px;
@@ -13,10 +17,22 @@ footer nav ul{
     padding: 0;
 }
 
+.footer-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (max-width: 600px) {
   .footer-content {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .footer-nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
   }
 
 }

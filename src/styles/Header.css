@@ -1,3 +1,10 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+    z-index: 1000;
+}
+
 .header-content {
   min-height: 120px;
   display: flex;
@@ -5,7 +12,11 @@
   align-items: center;
 }
 
-header nav ul{
+.header nav{
+    display: flex;
+}
+
+.header nav ul{
     display: flex;
     gap:28px;
     list-style-type: none;
@@ -13,14 +24,21 @@ header nav ul{
     padding: 0;
 }
 
-@media (max-width: 600px) {
+.header a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
   .header-content {
-    flex-direction: column;
     height: auto;
     gap: 20px;
   }
 
-  header nav ul {
+  .header nav{
+      display: none;
+  }
+
+  .header nav ul {
     flex-direction: column;
     gap: 10px;
   }

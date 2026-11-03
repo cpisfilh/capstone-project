@@ -2,6 +2,7 @@ import "../styles/Specials.css";
 import GreekSaladImage from "../assets/greek_salad.jpg";
 import BruchettaImage from "../assets/bruchetta.svg";
 import LemonDessertImage from "../assets/lemon_dessert.jpg";
+import { Button } from "./ui/Button";
 
 const dishes = [
   {
@@ -38,9 +39,9 @@ export function Specials() {
         <div className="specials__header">
           <h2>Specials</h2>
 
-          <a href="#" className="specials__button">
+          <Button onClick={() => console.log("Button clicked")} >
             Online Menu
-          </a>
+          </Button>
         </div>
 
         {/* Cards */}

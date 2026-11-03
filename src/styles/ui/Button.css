@@ -1,0 +1,15 @@
+.ui__button {
+  display: inline-block;
+  background-color: var(--primary-color-yellow);
+  color: var(--highlight-color-black);
+  padding: 12px 24px;
+  border-radius: var(--radius-2);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  transition: background-color 0.2s ease;
+  border-style: none;
+}
+
+.ui__button:hover {
+  background-color: var(--secondary-color-melon);
+}

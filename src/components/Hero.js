@@ -1,5 +1,6 @@
 import "../styles/Hero.css";
 import HeroImage from "../assets/restauranfood.jpg";
+import { Button } from "./ui/Button";
 
 export function Hero() {
   return (
@@ -13,9 +14,9 @@ export function Hero() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <a href="#" className="hero__button">
+          <Button onClick={() => console.log("Button clicked")}>
             Start free trial
-          </a>
+          </Button>
         </div>
 
         <div className="hero__image">
