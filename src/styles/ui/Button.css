@@ -6,10 +6,11 @@
   border-radius: var(--radius-2);
   font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
   border-style: none;
 }
 
 .ui__button:hover {
-  background-color: var(--secondary-color-melon);
+    background-color: var(--primary-color-yellow);
+    opacity: 0.8;
 }

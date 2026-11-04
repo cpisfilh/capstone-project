@@ -18,7 +18,7 @@ export function Hero() {
           </p>
 
           <Button onClick={() => navigate("/reservations")}>
-            Start free trial
+            Book now
           </Button>
         </div>
 
