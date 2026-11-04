@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Little Lemon – Restaurant Table Booking
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación web desarrollada como proyecto **Capstone** de la certificación **Meta Front-End Developer Professional Certificate**, ofrecida a través de Coursera.
 
-## Available Scripts
+El proyecto consiste en una aplicación para el restaurante ficticio Little Lemon, que permite a los usuarios explorar información del restaurante y realizar reservas de mesas en línea.
 
-In the project directory, you can run:
+## Tecnologías utilizadas
 
-### `npm start`
+- React
+- JavaScript
+- HTML5
+- CSS3
+- React Router DOM
+- React Testing Library
+- Jest
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Página principal con información del restaurante.
+- Sección de especialidades y testimonios de clientes.
+- Formulario para realizar reservas.
+- Consulta de horarios disponibles según la fecha seleccionada.
+- Validación de formularios mediante HTML5 y React.
+- Pantalla de confirmación de reserva.
+- Navegación entre páginas.
+- Diseño responsive y consideraciones de accesibilidad.
 
-### `npm test`
+## Requisitos previos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
-### `npm run build`
+- Node.js (versión LTS recomendada).
+- npm (incluido con Node.js).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalación y configuración
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clonar el repositorio:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone URL_DEL_REPOSITORIO
+   ```
 
-### `npm run eject`
+2. Ingresar al directorio del proyecto:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd nombre-del-proyecto
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instalar las dependencias:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Ejecutar la aplicación en modo desarrollo:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Abrir el navegador en:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```text
+   http://localhost:3000
+   ```
 
-### Code Splitting
+## Ejecución de pruebas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para ejecutar las pruebas unitarias:
 
-### Analyzing the Bundle Size
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Las pruebas permiten verificar el renderizado de los componentes, los atributos de validación HTML5 y el comportamiento de las validaciones del formulario de reservas.
 
-### Making a Progressive Web App
+## Objetivo académico
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este proyecto fue desarrollado como parte del proyecto final Capstone de la certificación Meta Front-End Developer de Coursera, con el objetivo de aplicar los conocimientos adquiridos sobre React, desarrollo de interfaces, gestión de estados, formularios, pruebas y accesibilidad web.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Proyecto académico – Little Lemon Restaurant Booking App**
