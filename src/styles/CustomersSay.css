@@ -1,6 +1,6 @@
 .testimonials {
     padding: var(--spacing-3xl) var(--container-padding);
-    background-color: var(--highlight-color-white);
+    background-color: var(--primary-color-yellow);
 }
 
 .testimonials__container h2 {

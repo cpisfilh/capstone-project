@@ -3,7 +3,7 @@ import GreekSaladImage from "../assets/greek_salad.jpg";
 import BruchettaImage from "../assets/bruchetta.svg";
 import LemonDessertImage from "../assets/lemon_dessert.jpg";
 import { Button } from "./ui/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const dishes = [
   {
@@ -33,6 +33,8 @@ const dishes = [
 ];
 
 export function Specials() {
+  const navigate = useNavigate();
+
   return (
     <section className="specials">
       <div className="container specials__container">
@@ -40,7 +42,7 @@ export function Specials() {
         <header className="specials__header">
           <h2>Specials</h2>
 
-          <Button onClick={() => console.log("Button clicked")} >
+          <Button onClick={() => navigate("/online-menu")} >
             Online Menu
           </Button>
         </header>
